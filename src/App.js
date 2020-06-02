@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Classes from './components/OurClasses/Classes';
+import ClassesDetail from './components/OurClasses/ClassesDetail';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -19,27 +21,14 @@ function App() {
           <Header />
           <Classes />
         </Route>
-        {/* <Route path='/appointment'>
-          <Appointment />
+        <Route path='/classes/:key'>
+          <Header />
+          <ClassesDetail />
         </Route>
-        <Route exact path='/doctor'>
-          <Login />
-        </Route>
-        <Route path='/doctor/dashboard'>
-          <Dashboard />
-        </Route>
-        <Route path='/doctor/patients'>
-          <Patients />
-        </Route>
-        <Route path='/doctor/appointment'>
-          <DashBoardAppointments />
-        </Route>
-        <Route path='/doctor/prescriptions'>
-          <Prescriptions />
-        </Route>
+
         <Route path='*'>
           <NotFound />
-        </Route> */}
+        </Route>
       </Switch>
     </Router>
   );

@@ -24,11 +24,9 @@ const Classes = () => {
       <section>
         <div className='container'>
           <div className='row'>
-            <div className='col-xl-4 mt-2'>
-              {classesType.map(item => (
-                <SingleClass key={item.key} item={item}></SingleClass>
-              ))}
-            </div>
+            {classesType.map(item => (
+              <SingleClass key={item.key} item={item}></SingleClass>
+            ))}
           </div>
         </div>
       </section>

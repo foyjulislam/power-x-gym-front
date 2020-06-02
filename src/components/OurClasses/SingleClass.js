@@ -1,15 +1,16 @@
-import React, { useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import React from 'react';
 
 const SingleClass = props => {
-  const { name, img } = props.item;
+  const { name, img, key } = props.item;
   return (
-    <div>
-      <div>
-        <img src={img} alt='' />
-      </div>
-      <div>
-        <h4>{name}</h4>
+    <div className='col-xl-4 d-flex'>
+      <div className=' text-center' onClick={() => props.history.push(`/classes/${key}`)}>
+        <div className='p-2'>
+          <img className='' src={img} alt='' />
+          <div className=''>
+            <h5 className=''>{name}</h5>
+          </div>
+        </div>
       </div>
     </div>
   );
