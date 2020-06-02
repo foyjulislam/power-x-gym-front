@@ -1,0 +1,10 @@
+.bgImage {
+  position: relative;
+  background-image: url(../../images/power-x-gym-bg.png);
+  min-height: 450px;
+  background-size: cover;
+  background-position: center center;
+}
+.mTop {
+  margin-top: 200px;
+}
