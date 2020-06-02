@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
+import Workout from './components/HomePage/Workout';
 import Classes from './components/OurClasses/Classes';
 import ClassesDetail from './components/OurClasses/ClassesDetail';
 import NotFound from './components/NotFound/NotFound';
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/'>
           <Header />
           <Banner />
+          <Workout />
         </Route>
         <Route path='/classes'>
           <Header />
