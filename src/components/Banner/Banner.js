@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = () => {
@@ -15,13 +16,16 @@ const Banner = () => {
               ab maxime soluta vero at?
             </p>
             <div className=' mb-4'>
-              <a className='btn btn-warning ml-1 pl-5 pr-5 font-weight-bold' href='/joinus'>
+              {/* <a className='btn btn-warning ml-1 pl-5 pr-5 font-weight-bold' href='/joinus'>
                 Join us
-              </a>
+              </a> */}
+              <Link className='btn btn-warning ml-1 pl-5 pr-5 font-weight-bold' to={`/pricing`}>
+                Join us
+              </Link>
             </div>
           </div>
           <div className='col-xl-6'>
-            <div class='embed-responsive embed-responsive-4by3'>
+            <div className='embed-responsive embed-responsive-4by3'>
               {/* <iframe
                   className='embed-responsive-item'
                   src="https://www.youtube.com/embed/uadD3_Zk0Vk"

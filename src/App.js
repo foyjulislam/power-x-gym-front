@@ -9,6 +9,8 @@ import Workout from './components/HomePage/Workout';
 import Classes from './components/OurClasses/Classes';
 import ClassesDetail from './components/OurClasses/ClassesDetail';
 import NotFound from './components/NotFound/NotFound';
+import Pricing from './components/Pricing/Pricing';
+import Membership from './components/Membership/Membership';
 
 function App() {
   return (
@@ -27,7 +29,14 @@ function App() {
           <Header />
           <ClassesDetail />
         </Route>
-
+        <Route path='/pricing'>
+          <Header />
+          <Pricing />
+        </Route>
+        <Route path='/price/:key'>
+          <Header />
+          <Membership />
+        </Route>
         <Route path='*'>
           <NotFound />
         </Route>
