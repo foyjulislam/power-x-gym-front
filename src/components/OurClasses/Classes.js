@@ -23,7 +23,13 @@ const Classes = () => {
       </section>
       <section>
         <div className='container'>
-          <div className='row'>
+          <div
+            className='row text-center'
+            style={{
+              display: 'flex',
+              justifyContent: 'center'
+            }}
+          >
             {classesType.map(item => (
               <SingleClass key={item.key} item={item}></SingleClass>
             ))}

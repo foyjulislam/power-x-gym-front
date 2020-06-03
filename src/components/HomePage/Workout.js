@@ -12,7 +12,13 @@ const Workout = () => {
   return (
     <section>
       <div className='container'>
-        <div className='row'>
+        <div
+          className='row text-center'
+          style={{
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+        >
           {workoutCtg.map(item => (
             <CategoryWork key={item.key} item={item}></CategoryWork>
           ))}

@@ -23,7 +23,7 @@ function App() {
           <Header />
           <Classes />
         </Route>
-        <Route path='/classes/:key'>
+        <Route path='/class/:key'>
           <Header />
           <ClassesDetail />
         </Route>
